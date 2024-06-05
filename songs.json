@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Luis test theme",
+        "audio": "./assets/audio/Re4R Luis temaiken.mp3",
+        "image": "./assets/images/Luis test theme.png"
+    },
+    {
+        "name": "Guitar test theme",
+        "audio": "./assets/audio/guitar test theme.mp3",
+        "image": "./assets/images/guitar test theme.png"
+    }
+]
