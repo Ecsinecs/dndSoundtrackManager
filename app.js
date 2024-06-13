@@ -1,9 +1,10 @@
 class Song {
-  constructor(name, audio, image) {
+  constructor(name, audio, image, fadeInTimer, id) {
     this.name = name;
     this.audio = audio;
     this.image = image;
     this.id = id;
+    this.fadeInTimer = fadeInTimer;
   }
 }
 
@@ -19,6 +20,7 @@ const getSongs = async () => {
         element.name,
         element.audio,
         element.image,
+        element.fadeInTimer,
         (id = "" + (songs.length + 1))
       )
     );
@@ -54,8 +56,25 @@ function createSong(song) {
   audios.appendChild(div);
 
   const actualSong = document.getElementById(`audioController${song.name}`);
-  actualSong.volume = 0
-  $audio.animate({volume: 1.0}, 1000)
+  actualSong.volume = 0;
+
+  fadeIn(song);
+}
+
+function fadeIn(song) {
+  const audio = document.getElementById(`audioController${song.name}`);
+
+  const fadeInAudio = setInterval(function () {
+    if (audio.volume < 0.98) {
+      audio.volume += 0.01;
+    } else {
+      audio.volume = 1.0;
+    }
+
+    if (audio.volume === 1.0) {
+      clearInterval(fadeInAudio);
+    }
+  }, song.fadeInTimer);
 }
 
 function delPrevSong() {}

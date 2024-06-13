@@ -2,11 +2,19 @@
     {
         "name": "Luis test theme",
         "audio": "./assets/audio/Re4R Luis temaiken.mp3",
-        "image": "./assets/images/Luis test theme.png"
+        "image": "./assets/images/Luis test theme.png",
+        "fadeInTimer": 10
     },
     {
         "name": "Guitar test theme",
         "audio": "./assets/audio/guitar test theme.mp3",
-        "image": "./assets/images/guitar test theme.png"
+        "image": "./assets/images/guitar test theme.png",
+        "fadeInTimer": 75
+    },
+    {
+        "name": "Hades: Kill Chronos",
+        "audio": "./assets/audio/ades.mp3",
+        "image": "./assets/images/ades.png",
+        "fadeInTimer": 35
     }
 ]
