@@ -1,9 +1,34 @@
-.songName {
-    padding: 7vh;
-    width: 100vw;
-    color: rgb(0, 0, 0);
-    text-shadow: 0px 0px 5px rgb(255, 255, 255);
-    text-align: center;
-    font-size: 7vh;
-    font-weight: bolder;
+.songCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    padding: 6px 0px 6px 6px;
+    margin: 6px 0px 6px 6px;
+    border-radius: 2px;
+    background: linear-gradient(170deg, rgba(255, 255, 255, 0.282) 0%, rgba(0,0,0,0) 100%);
+
+    .songIcon {
+        min-width: 75px;
+        min-height: 75px;
+        border-radius: 1000px;
+        background-repeat: no-repeat;
+        background-position: 0px;
+        background-size: 75px;
+    }
+    
+    .songName {
+        font-size: 18px;
+        font-weight: normal;
+        width: 100px;
+        text-align: center;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    padding: 10px;
 }

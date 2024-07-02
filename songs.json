@@ -1,20 +1,58 @@
 [
     {
-        "name": "Luis test theme",
-        "audio": "./assets/audio/Re4R Luis temaiken.mp3",
-        "image": "./assets/images/Luis test theme.png",
-        "fadeInTimer": 10
+        "name": "Battle of the Mountain",
+        "audio": "./assets/audio/Battle of the Mountain.mp3",
+        "image": "./assets/images/DarkestDungeonOST.png",
+        "fadeInTimer": 10,
+        "category": "Combat"
     },
     {
-        "name": "Guitar test theme",
-        "audio": "./assets/audio/guitar test theme.mp3",
-        "image": "./assets/images/guitar test theme.png",
-        "fadeInTimer": 75
+        "name": "Conflict in the Tangle",
+        "audio": "./assets/audio/Conflict in the Tangle.mp3",
+        "image": "./assets/images/DarkestDungeonOST.png",
+        "fadeInTimer": 10,
+        "category": "Combat"
     },
     {
-        "name": "Hades: Kill Chronos",
-        "audio": "./assets/audio/ades.mp3",
-        "image": "./assets/images/ades.png",
-        "fadeInTimer": 35
+        "name": "Foetor Combat",
+        "audio": "./assets/audio/Foetor Combat.mp3",
+        "image": "./assets/images/DarkestDungeonOST.png",
+        "fadeInTimer": 10,
+        "category": "Combat"
+    },
+    {
+        "name": "Shroud of the Deep",
+        "audio": "./assets/audio/Shroud of the Deep.mp3",
+        "image": "./assets/images/DarkestDungeonOST.png",
+        "fadeInTimer": 10,
+        "category": "Combat"
+    },
+    {
+        "name": "Sprawl Battle",
+        "audio": "./assets/audio/Sprawl Battle.mp3",
+        "image": "./assets/images/DarkestDungeonOST.png",
+        "fadeInTimer": 10,
+        "category": "Combat"
+    },
+    {
+        "name": "The Sluice",
+        "audio": "./assets/audio/The Sluice.mp3",
+        "image": "./assets/images/DarkestDungeonOST.png",
+        "fadeInTimer": 10,
+        "category": "Combat"
+    },
+    {
+        "name": "The Winding Valley",
+        "audio": "./assets/audio/The Winding Valley.mp3",
+        "image": "./assets/images/DarkestDungeonOST.png",
+        "fadeInTimer": 10,
+        "category": "Travel"
+    },
+    {
+        "name": "Traverse the Mountain",
+        "audio": "./assets/audio/Traverse the Mountain.mp3",
+        "image": "./assets/images/DarkestDungeonOST.png",
+        "fadeInTimer": 10,
+        "category": "Travel"
     }
 ]
