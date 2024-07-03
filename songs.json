@@ -154,11 +154,29 @@
     },
     {
         "name": "Farbane Nights",
-        "audio": "./assets/audio/Vrising Farbane Nights.mp3",
+        "audio": "./assets/audio/VRising Farbane Nights.mp3",
         "image": "./assets/images/Image Placeholder.jpg",
         "fadeInTimer": 10,
         "category": "Town",
         "randomStart": true,
+        "loops": true
+    },
+    {
+        "name": "Loop in mp3",
+        "audio": "./assets/audio/Loop1.mp3",
+        "image": "./assets/images/Image Placeholder.jpg",
+        "fadeInTimer": 0,
+        "category": "Loop",
+        "randomStart": false,
+        "loops": true
+    },
+    {
+        "name": "Loop in ogg",
+        "audio": "./assets/audio/Loop2.ogg",
+        "image": "./assets/images/Image Placeholder.jpg",
+        "fadeInTimer": 0,
+        "category": "Loop",
+        "randomStart": false,
         "loops": true
     }
 ]
