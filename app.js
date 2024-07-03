@@ -91,7 +91,7 @@ function showDOM() {
 }
 
 //Plays song function
-function playSong(song) {
+/*function playSong(song) {
   const audio = document.getElementById(`audioController${song.name}`);
   stopAllSongs(song.name);
   audio.volume = 0;
@@ -107,10 +107,65 @@ function playSong(song) {
     console.log(audio.currentTime);
   }
   fadeIn(song);
+}*/
+
+function playSong(song) {
+  loopify(song.audio, function (err, loop) {
+    // If something went wrong, `err` is supplied
+    if (err) {
+      return console.err(err);
+    }
+
+    // Play it whenever you want
+    stopAllSongs(song.name);
+    loop.volume = 0;
+
+    //Checks if song has random start
+    if (song.randomStart === true) {
+      loop.currentTime = Math.random() * loop.duration;
+      loop.play();
+    } else if (song.randomStart === false) {
+      loop.currentTime = 0;
+      loop.play();
+    }
+
+    console.log(`Fade in: ${song.name}`);
+    const fadeInAudio = setInterval(function () {
+      console.log(loop)
+      if (loop.volume < 0.98) {
+        loop.volume += 0.01;
+      } else {
+        loop.volume = 1.0;
+      }
+  
+      if (loop.volume === 1.0) {
+        song.playing = true;
+        clearInterval(fadeInAudio);
+      }
+    }, song.fadeInTimer);
+  });
 }
 
 //Fade in for song function
-function fadeIn(song) {
+/* function fadeIn(song) {
+  const audio = document.getElementById(`audioController${song.name}`);
+  console.log(`Fade in: ${song.name}`);
+  const fadeInAudio = setInterval(function () {
+    if (audio.volume < 0.98) {
+      audio.volume += 0.01;
+    } else {
+      audio.volume = 1.0;
+    }
+
+    if (audio.volume === 1.0) {
+      song.playing = true;
+      clearInterval(fadeInAudio);
+    }
+  }, song.fadeInTimer);
+} */
+
+//Fade in for song function
+function fadeIn(songLooped) {
   const audio = document.getElementById(`audioController${song.name}`);
   console.log(`Fade in: ${song.name}`);
   const fadeInAudio = setInterval(function () {
@@ -164,3 +219,73 @@ title.addEventListener("click", () => {
 });
 
 getSongs();
+
+(function () {
+  function loopify(uri, cb) {
+    var context = new (window.AudioContext || window.webkitAudioContext)(),
+      request = new XMLHttpRequest();
+
+    request.responseType = "arraybuffer";
+    request.open("GET", uri, true);
+
+    // XHR failed
+    request.onerror = function () {
+      cb(new Error("Couldn't load audio from " + uri));
+    };
+
+    // XHR complete
+    request.onload = function () {
+      context.decodeAudioData(request.response, success, function (err) {
+        // Audio was bad
+        cb(new Error("Couldn't decode audio from " + uri));
+      });
+    };
+
+    request.send();
+
+    function success(buffer) {
+      var source;
+
+      function play() {
+        // Stop if it's already playing
+        stop();
+
+        // Create a new source (can't replay an existing source)
+        source = context.createBufferSource();
+        source.connect(context.destination);
+
+        // Set the buffer
+        source.buffer = buffer;
+        source.loop = true;
+
+        // Play it
+        source.start(0);
+      }
+
+      function stop() {
+        // Stop and clear if it's playing
+        if (source) {
+          source.stop();
+          source = null;
+        }
+      }
+
+      cb(null, {
+        play: play,
+        stop: stop,
+      });
+    }
+  }
+
+  loopify.version = "0.1";
+
+  if (typeof define === "function" && define.amd) {
+    define(function () {
+      return loopify;
+    });
+  } else if (typeof module === "object" && module.exports) {
+    module.exports = loopify;
+  } else {
+    this.loopify = loopify;
+  }
+})();
