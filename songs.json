@@ -172,7 +172,7 @@
     },
     {
         "name": "Arkin Solo 1",
-        "audio": "./assets/audio/Arkin solo1.mp3",
+        "audio": "./assets/audio/Arkin Solo1.mp3",
         "image": "./assets/images/DarkestDungeonOST.png",
         "fadeInTimer": 10,
         "category": "Tavern",
@@ -181,7 +181,7 @@
     },
     {
         "name": "Arkin Solo 2",
-        "audio": "./assets/audio/Arkin solo2.mp3",
+        "audio": "./assets/audio/Arkin Solo2.mp3",
         "image": "./assets/images/DarkestDungeonOST.png",
         "fadeInTimer": 10,
         "category": "Tavern",
@@ -190,7 +190,7 @@
     },
     {
         "name": "Arkin Solo 3",
-        "audio": "./assets/audio/Arkin solo3.mp3",
+        "audio": "./assets/audio/Arkin Solo3.mp3",
         "image": "./assets/images/DarkestDungeonOST.png",
         "fadeInTimer": 10,
         "category": "Tavern",
@@ -199,7 +199,7 @@
     },
     {
         "name": "Arkin Solo 4",
-        "audio": "./assets/audio/Arkin solo4.mp3",
+        "audio": "./assets/audio/Arkin Solo4.mp3",
         "image": "./assets/images/DarkestDungeonOST.png",
         "fadeInTimer": 10,
         "category": "Tavern",

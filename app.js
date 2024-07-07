@@ -163,7 +163,7 @@ title.addEventListener("click", () => {
   stopAllSongs();
 });
 
-//Repeat song before end - EXPERIMENTAL: I KNOW IT ISN'T EFICIENT - value is in seconds for better performance and efficiency
+//Repeat song before end - EXPERIMENTAL: I KNOW IT ISN'T EFFICIENT - value is in seconds for better performance and efficiency
 function repeatSong(song) {
   const audio = document.getElementById(`audioController${song.name}`);
 
