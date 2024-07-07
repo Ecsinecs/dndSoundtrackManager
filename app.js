@@ -70,10 +70,10 @@ function showDOM() {
     //Checks if song loops
     if (song.loops === true) {
       div2.innerHTML = `
-        <audio src="${song.audio}" controls loop class="audioControls" id="audioController${song.name}">`;
+        <audio src="${song.audio}" preload controls loop class="audioControls" id="audioController${song.name}">`;
     } else {
       div2.innerHTML = `
-        <audio src="${song.audio}" controls class="audioControls" id="audioController${song.name}">`;
+        <audio src="${song.audio}" preload controls class="audioControls" id="audioController${song.name}">`;
     }
     audios.appendChild(div2);
 
@@ -107,6 +107,7 @@ function playSong(song) {
     console.log(audio.currentTime);
   }
   fadeIn(song);
+  repeatSong(song);
 }
 
 //Fade in for song function
@@ -121,7 +122,6 @@ function fadeIn(song) {
     }
 
     if (audio.volume === 1.0) {
-      song.playing = true;
       clearInterval(fadeInAudio);
     }
   }, song.fadeInTimer);
@@ -162,5 +162,22 @@ const title = document.getElementById("title");
 title.addEventListener("click", () => {
   stopAllSongs();
 });
+
+//Repeat song before end - EXPERIMENTAL: I KNOW IT ISN'T EFICIENT
+function repeatSong(song) {
+  const audio = document.getElementById(`audioController${song.name}`);
+
+  song.playing = true
+
+  const repeat = setInterval(function () {
+    if (audio.currentTime > audio.duration - 0.1 && song.playing === true && song.loops === true) {
+      audio.currentTime = 0;
+      console.log(`${song.name} has been repeated`);
+    } else if (song.playing === false || song.loops === false) {
+      clearInterval(repeat);
+    }
+    console.log(`${audio.currentTime} ${audio.duration} ${song.playing}`)
+  }, 50);
+}
 
 getSongs();

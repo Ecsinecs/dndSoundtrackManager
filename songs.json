@@ -1,71 +1,71 @@
 [
     {
-        "name": "Battle of the Mountain",
+        "name": "VS Powerful enemy",
         "audio": "./assets/audio/Battle of the Mountain.mp3",
-        "image": "./assets/images/DarkestDungeonOST.png",
+        "image": "./assets/images/powerfulEnemy.jpg",
         "fadeInTimer": 10,
         "category": "Combat",
         "randomStart": false,
         "loops": true
     },
     {
-        "name": "Conflict in the Tangle",
+        "name": "VS Savage 1 (Tangle)",
         "audio": "./assets/audio/Conflict in the Tangle.mp3",
-        "image": "./assets/images/DarkestDungeonOST.png",
+        "image": "./assets/images/savage2.jpg",
         "fadeInTimer": 10,
         "category": "Combat",
         "randomStart": false,
         "loops": true
     },
     {
-        "name": "Foetor Combat",
+        "name": "VS Savage 2 (Foetor)",
         "audio": "./assets/audio/Foetor Combat.mp3",
-        "image": "./assets/images/DarkestDungeonOST.png",
+        "image": "./assets/images/savage1.jpg",
         "fadeInTimer": 10,
         "category": "Combat",
         "randomStart": false,
         "loops": true
     },
     {
-        "name": "Shroud of the Deep",
-        "audio": "./assets/audio/Shroud of the Deep.mp3",
-        "image": "./assets/images/DarkestDungeonOST.png",
-        "fadeInTimer": 10,
-        "category": "Combat",
-        "randomStart": false,
-        "loops": true
-    },
-    {
-        "name": "Sprawl Battle",
-        "audio": "./assets/audio/Sprawl Battle.mp3",
-        "image": "./assets/images/DarkestDungeonOST.png",
-        "fadeInTimer": 10,
-        "category": "Combat",
-        "randomStart": false,
-        "loops": true
-    },
-    {
-        "name": "The Sluice",
+        "name": "VS Savage 3 (Sluice)",
         "audio": "./assets/audio/The Sluice.mp3",
-        "image": "./assets/images/DarkestDungeonOST.png",
+        "image": "./assets/images/savage3.jpg",
         "fadeInTimer": 10,
         "category": "Combat",
         "randomStart": false,
         "loops": true
     },
     {
-        "name": "The Winding Valley",
+        "name": "VS Fishfolk",
+        "audio": "./assets/audio/Shroud of the Deep.mp3",
+        "image": "./assets/images/fishfolk.jpg",
+        "fadeInTimer": 10,
+        "category": "Combat",
+        "randomStart": false,
+        "loops": true
+    },
+    {
+        "name": "VS Bandit",
+        "audio": "./assets/audio/Sprawl Battle.mp3",
+        "image": "./assets/images/bandits.jpg",
+        "fadeInTimer": 10,
+        "category": "Combat",
+        "randomStart": false,
+        "loops": true
+    },
+    {
+        "name": "Travel - Valley",
         "audio": "./assets/audio/The Winding Valley.mp3",
-        "image": "./assets/images/DarkestDungeonOST.png",
+        "image": "./assets/images/travelValley.jpg",
         "fadeInTimer": 10,
         "category": "Travel",
         "randomStart": false,
         "loops": true
     },
     {
-        "name": "Traverse the Mountain",
+        "name": "Travel - Boss",
         "audio": "./assets/audio/Traverse the Mountain.mp3",
-        "image": "./assets/images/DarkestDungeonOST.png",
+        "image": "./assets/images/travelBoss.jpg",
         "fadeInTimer": 10,
         "category": "Travel",
         "randomStart": false,
@@ -74,7 +74,7 @@
     {
         "name": "Altar of Hope 1",
         "audio": "./assets/audio/Altar of Hope 1.mp3",
-        "image": "./assets/images/Image Placeholder.jpg",
+        "image": "./assets/images/town.jpg",
         "fadeInTimer": 10,
         "category": "Town",
         "randomStart": true,
@@ -83,7 +83,7 @@
     {
         "name": "Altar of Hope 2",
         "audio": "./assets/audio/Altar of Hope 2.mp3",
-        "image": "./assets/images/Image Placeholder.jpg",
+        "image": "./assets/images/town.jpg",
         "fadeInTimer": 10,
         "category": "Town",
         "randomStart": true,
@@ -92,7 +92,7 @@
     {
         "name": "Altar of Hope 3",
         "audio": "./assets/audio/Altar of Hope 3.mp3",
-        "image": "./assets/images/Image Placeholder.jpg",
+        "image": "./assets/images/town.jpg",
         "fadeInTimer": 10,
         "category": "Town",
         "randomStart": true,
@@ -101,7 +101,7 @@
     {
         "name": "Butcher Circus Prelude",
         "audio": "./assets/audio/Butcher Circus Prelude.mp3",
-        "image": "./assets/images/Image Placeholder.jpg",
+        "image": "./assets/images/colisseum.jpg",
         "fadeInTimer": 10,
         "category": "Arena",
         "randomStart": false,
@@ -110,7 +110,7 @@
     {
         "name": "Butcher Circus Combat",
         "audio": "./assets/audio/Butcher Circus Combat.mp3",
-        "image": "./assets/images/Image Placeholder.jpg",
+        "image": "./assets/images/colisseum.jpg",
         "fadeInTimer": 10,
         "category": "Arena",
         "randomStart": false,
@@ -119,34 +119,34 @@
     {
         "name": "The Coup Instrumental",
         "audio": "./assets/audio/D2 The Coup Instrumental.mp3",
-        "image": "./assets/images/Image Placeholder.jpg",
+        "image": "./assets/images/DarkestDungeonOST.png",
         "fadeInTimer": 0,
-        "category": "Tabern",
+        "category": "Tavern",
         "randomStart": false,
         "loops": false
     },
     {
         "name": "Good Ridance Instrumental",
         "audio": "./assets/audio/Hades Good Ridance Instrumental.mp3",
-        "image": "./assets/images/Image Placeholder.jpg",
+        "image": "./assets/images/DarkestDungeonOST.png",
         "fadeInTimer": 0,
-        "category": "Tabern",
+        "category": "Tavern",
         "randomStart": false,
         "loops": false
     },
     {
         "name": "Lament of Orpheous Instrumental",
         "audio": "./assets/audio/Hades Lament of Orpheous Instrumental.mp3",
-        "image": "./assets/images/Image Placeholder.jpg",
+        "image": "./assets/images/DarkestDungeonOST.png",
         "fadeInTimer": 0,
-        "category": "Tabern",
+        "category": "Tavern",
         "randomStart": false,
         "loops": false
     },
     {
         "name": "Final Expense",
         "audio": "./assets/audio/Hades Final Expense.mp3",
-        "image": "./assets/images/Image Placeholder.jpg",
+        "image": "./assets/images/merchant.jpg",
         "fadeInTimer": 0,
         "category": "Town",
         "randomStart": false,
@@ -155,15 +155,15 @@
     {
         "name": "Farbane Nights",
         "audio": "./assets/audio/VRising Farbane Nights.mp3",
-        "image": "./assets/images/Image Placeholder.jpg",
+        "image": "./assets/images/town.jpg",
         "fadeInTimer": 10,
         "category": "Town",
         "randomStart": true,
         "loops": true
     },
     {
-        "name": "Loop in mp3",
-        "audio": "./assets/audio/Loop1.mp3",
+        "name": "Test",
+        "audio": "./assets/audio/test.wav",
         "image": "./assets/images/Image Placeholder.jpg",
         "fadeInTimer": 0,
         "category": "Loop",
@@ -171,11 +171,137 @@
         "loops": true
     },
     {
-        "name": "Loop in ogg",
-        "audio": "./assets/audio/Loop2.ogg",
-        "image": "./assets/images/Image Placeholder.jpg",
-        "fadeInTimer": 0,
-        "category": "Loop",
+        "name": "Arkin Solo 1",
+        "audio": "./assets/audio/Arkin solo1.mp3",
+        "image": "./assets/images/DarkestDungeonOST.png",
+        "fadeInTimer": 10,
+        "category": "Tavern",
+        "randomStart": false,
+        "loops": true
+    },
+    {
+        "name": "Arkin Solo 2",
+        "audio": "./assets/audio/Arkin solo2.mp3",
+        "image": "./assets/images/DarkestDungeonOST.png",
+        "fadeInTimer": 10,
+        "category": "Tavern",
+        "randomStart": false,
+        "loops": true
+    },
+    {
+        "name": "Arkin Solo 3",
+        "audio": "./assets/audio/Arkin solo3.mp3",
+        "image": "./assets/images/DarkestDungeonOST.png",
+        "fadeInTimer": 10,
+        "category": "Tavern",
+        "randomStart": false,
+        "loops": true
+    },
+    {
+        "name": "Arkin Solo 4",
+        "audio": "./assets/audio/Arkin solo4.mp3",
+        "image": "./assets/images/DarkestDungeonOST.png",
+        "fadeInTimer": 10,
+        "category": "Tavern",
+        "randomStart": false,
+        "loops": true
+    },
+    {
+        "name": "Tension 1",
+        "audio": "./assets/audio/Tension1.mp3",
+        "image": "./assets/images/tension.jpg",
+        "fadeInTimer": 10,
+        "category": "Ambiental",
+        "randomStart": false,
+        "loops": true
+    },
+    {
+        "name": "Tension 2",
+        "audio": "./assets/audio/Tension2.mp3",
+        "image": "./assets/images/tension.jpg",
+        "fadeInTimer": 10,
+        "category": "Ambiental",
+        "randomStart": false,
+        "loops": true
+    },
+    {
+        "name": "Explore - Puzzle",
+        "audio": "./assets/audio/Tension3.mp3",
+        "image": "./assets/images/puzzle.jpg",
+        "fadeInTimer": 10,
+        "category": "Ambiental",
+        "randomStart": false,
+        "loops": true
+    },
+    {
+        "name": "Blacksmith",
+        "audio": "./assets/audio/Blacksmith ambience.mp3",
+        "image": "./assets/images/blacksmith.jpg",
+        "fadeInTimer": 10,
+        "category": "Town",
+        "randomStart": true,
+        "loops": true
+    },
+    {
+        "name": "Endless Fight",
+        "audio": "./assets/audio/Endless fight.mp3",
+        "image": "./assets/images/endlessBattle.jpg",
+        "fadeInTimer": 7,
+        "category": "Arena",
+        "randomStart": false,
+        "loops": true
+    },
+    {
+        "name": "Tiresome Bossfight",
+        "audio": "./assets/audio/Tiresome boss.mp3",
+        "image": "./assets/images/endlessBoss.jpg",
+        "fadeInTimer": 5,
+        "category": "Arena",
+        "randomStart": false,
+        "loops": true
+    },
+    {
+        "name": "Explore - Ruins",
+        "audio": "./assets/audio/Explore the Ruins.mp3",
+        "image": "./assets/images/ruins.jpg",
+        "fadeInTimer": 10,
+        "category": "Ambiental",
+        "randomStart": false,
+        "loops": true
+    },
+    {
+        "name": "VS Death",
+        "audio": "./assets/audio/Vs death.mp3",
+        "image": "./assets/images/vsDeath.jpg",
+        "fadeInTimer": 10,
+        "category": "Boss",
+        "randomStart": false,
+        "loops": true
+    },
+    {
+        "name": "VS Glory",
+        "audio": "./assets/audio/Vs glory.mp3",
+        "image": "./assets/images/vsGlory.jpg",
+        "fadeInTimer": 10,
+        "category": "Boss",
+        "randomStart": false,
+        "loops": true
+    },
+    {
+        "name": "VS Pestilence",
+        "audio": "./assets/audio/Vs poison.mp3",
+        "image": "./assets/images/vsPestilence.jpg",
+        "fadeInTimer": 10,
+        "category": "Boss",
+        "randomStart": false,
+        "loops": true
+    },
+    {
+        "name": "VS War",
+        "audio": "./assets/audio/Vs war.mp3",
+        "image": "./assets/images/vsWar.jpg",
+        "fadeInTimer": 10,
+        "category": "Boss",
         "randomStart": false,
         "loops": true
     }
